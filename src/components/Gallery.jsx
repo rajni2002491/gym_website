@@ -37,12 +37,9 @@ const Gallery = () => {
     return (
         <section className="gallery">
             <div className="gallery-container">
-                <div className="gallery-carousel">
+                <div className="gallery-cards">
                     {galleryItems.map((item) => (
-                        <div
-                            key={item.id}
-                            className={`gallery-item ${currentSlide === item.id ? 'active' : ''}`}
-                        >
+                        <div key={item.id} className="gallery-card">
                             <div className={`gallery-image image-${item.id}`}></div>
                             <div className="gallery-content">
                                 <h3 className="gallery-title">{item.title}</h3>
@@ -53,9 +50,6 @@ const Gallery = () => {
                 </div>
 
                 <div className="gallery-nav">
-                    <button className="nav-btn prev" onClick={prevSlide}>
-                        <ChevronLeft />
-                    </button>
                     <div className="nav-dots">
                         {[1, 2, 3].map((dot) => (
                             <button
@@ -65,9 +59,14 @@ const Gallery = () => {
                             ></button>
                         ))}
                     </div>
-                    <button className="nav-btn next" onClick={nextSlide}>
-                        <ChevronRight />
-                    </button>
+                    <div className="nav-arrows">
+                        <button className="nav-btn-square prev" onClick={prevSlide}>
+                            <ChevronLeft />
+                        </button>
+                        <button className="nav-btn-square next" onClick={nextSlide}>
+                            <ChevronRight />
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
