@@ -40,7 +40,13 @@ const Gallery = () => {
                 <div className="gallery-cards">
                     {galleryItems.map((item) => (
                         <div key={item.id} className="gallery-card">
-                            <div className={`gallery-image image-${item.id}`}></div>
+                            <div className="gallery-image">
+                                <img
+                                    src={`https://picsum.photos/400/300?random=${item.id}`}
+                                    alt={item.title}
+                                    className="gallery-img"
+                                />
+                            </div>
                             <div className="gallery-content">
                                 <h3 className="gallery-title">{item.title}</h3>
                                 <p className="gallery-description">{item.description}</p>
@@ -50,6 +56,9 @@ const Gallery = () => {
                 </div>
 
                 <div className="gallery-nav">
+                    <button className="nav-btn-square prev" onClick={prevSlide}>
+                        <ChevronLeft />
+                    </button>
                     <div className="nav-dots">
                         {[1, 2, 3].map((dot) => (
                             <button
@@ -59,14 +68,9 @@ const Gallery = () => {
                             ></button>
                         ))}
                     </div>
-                    <div className="nav-arrows">
-                        <button className="nav-btn-square prev" onClick={prevSlide}>
-                            <ChevronLeft />
-                        </button>
-                        <button className="nav-btn-square next" onClick={nextSlide}>
-                            <ChevronRight />
-                        </button>
-                    </div>
+                    <button className="nav-btn-square next" onClick={nextSlide}>
+                        <ChevronRight />
+                    </button>
                 </div>
             </div>
         </section>

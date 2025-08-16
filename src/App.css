@@ -96,20 +96,20 @@ body {
 }
 
 .btn-login {
-  background: #00ff88;
+  background: #4CAF50;
   color: white;
   border-radius: 25px;
 }
 
 .btn-workshop {
-  background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
   color: #000;
   border: none;
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 50px;
-  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.3);
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -117,26 +117,26 @@ body {
 
 .btn-workshop:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(0, 255, 136, 0.5);
-  background: linear-gradient(135deg, #00ff88 0%, #00ffaa 100%);
+  box-shadow: 0 15px 40px rgba(76, 175, 80, 0.5);
+  background: linear-gradient(135deg, #4CAF50 0%, #66bb6a 100%);
 }
 
 .btn-demo {
-  background: #00ff88;
+  background: #4CAF50;
   color: white;
   margin-top: 1rem;
   border-radius: 25px;
 }
 
 .btn-subscribe {
-  background: #00ff88;
+  background: #4CAF50;
   color: white;
   width: 100%;
   margin-top: 1rem;
 }
 
 .btn-connect {
-  background: #00ff88;
+  background: #4CAF50;
   color: white;
   margin-top: 1rem;
 }
@@ -268,7 +268,7 @@ body {
 
 /* Why Choose Section */
 .why-choose {
-  padding: 0.2rem 2rem;
+  padding: 0.2rem 2rem 0.1rem 2rem;
   background: #000;
   min-height: 100vh;
 }
@@ -331,7 +331,7 @@ body {
 }
 
 .feature-icon {
-  background: #00ff88;
+  background: #4CAF50;
   color: #000;
   width: 30px;
   height: 30px;
@@ -533,7 +533,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #00ff88;
+  background: #4CAF50;
   border: none;
   color: white;
   display: flex;
@@ -544,7 +544,7 @@ body {
 }
 
 .nav-btn-circle:hover {
-  background: #00cc6a;
+  background: #45a049;
   transform: scale(1.05);
 }
 
@@ -907,22 +907,26 @@ body {
 
 .gallery-image {
   width: 100%;
-  height: 200px;
+  height: 300px;
   border-radius: 15px;
   margin-bottom: 1.5rem;
+  overflow: hidden;
 }
 
-.image-1 {
-  background: linear-gradient(45deg, #ff4444, #ff8844);
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
 }
 
-.image-2 {
-  background: linear-gradient(45deg, #ff8844, #ffaa44);
+.gallery-img:hover {
+  transform: scale(1.05);
 }
 
-.image-3 {
-  background: linear-gradient(45deg, #ffaa44, #ffdd44);
-}
+
 
 .gallery-content {
   text-align: center;
@@ -943,25 +947,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 400px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 .nav-dots {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.3rem;
+  justify-content: center;
 }
 
-.nav-arrows {
-  display: flex;
-  gap: 1rem;
-}
+
 
 .nav-btn-square {
   width: 50px;
   height: 50px;
   border-radius: 8px;
-  background: #00ff88;
+  background: #4CAF50;
   border: none;
   color: white;
   display: flex;
@@ -972,13 +975,13 @@ body {
 }
 
 .nav-btn-square:hover {
-  background: #00cc6a;
+  background: #45a049;
   transform: scale(1.05);
 }
 
 .nav-dot {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   border: none;
   background: #333;
@@ -987,7 +990,7 @@ body {
 }
 
 .nav-dot.active {
-  background: #00ff88;
+  background: #ff4444;
 }
 
 /* Footer Section */
