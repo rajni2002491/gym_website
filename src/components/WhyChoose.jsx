@@ -9,7 +9,10 @@ const WhyChoose = () => {
                     <img src="/gym_image2.png" alt="Fitness Training" className="why-choose-img" />
                 </div>
                 <div className="why-choose-content">
-                    <h2 className="why-choose-title">WHY CHOOSE OUR FITNESS</h2>
+                    <h2 className="why-choose-title">
+                        <span className="title-line-1">WHY CHOOSE OUR</span><br />
+                        <span className="title-line-2">FITNESS</span>
+                    </h2>
                     <div className="features-list">
                         <div className="feature-item">
                             <div className="feature-icon">

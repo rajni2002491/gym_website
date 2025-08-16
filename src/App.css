@@ -296,11 +296,25 @@ body {
 }
 
 .why-choose-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
   font-weight: 900;
-  color: #ffffff;
   letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.title-line-1 {
+  color: #ffffff;
+}
+
+.title-line-2 {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 2px #ffffff;
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4);
 }
 
 .features-list {
