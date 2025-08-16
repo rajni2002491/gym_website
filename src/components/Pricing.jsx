@@ -48,7 +48,10 @@ const Pricing = () => {
     return (
         <section className="pricing" id="pricing">
             <div className="pricing-container">
-                <h2 className="pricing-title">ONLINE PACKAGE PACKAGE</h2>
+                <h2 className="pricing-title">
+                    <span className="title-solid">ONLINE PACKAGE</span>
+                    <span className="title-outlined"> PACKAGE</span>
+                </h2>
                 <div className="pricing-cards">
                     {packages.map((pkg, index) => (
                         <div key={index} className={`pricing-card ${pkg.featured ? 'featured' : ''}`}>

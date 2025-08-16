@@ -782,6 +782,21 @@ body {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title-solid {
+  color: #ffffff;
+}
+
+.title-outlined {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 2px #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .pricing-cards {
