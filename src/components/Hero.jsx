@@ -13,14 +13,12 @@ const Hero = () => {
                         <p className="hero-tagline">
                             Welcome To Large Fit 415, Your Go-To Large Workout Studio In The San Francisco Bay Area. We're Here To Help The Best Strongest.
                         </p>
-                    </div>
-                    <div className="hero-button">
                         <button className="btn btn-workshop">Join Our Workshop</button>
                     </div>
-                </div>
 
-                <div className="hero-image-section">
-                    <div className="gym-image"></div>
+                    <div className="hero-image-section">
+                        <div className="gym-image"></div>
+                    </div>
                 </div>
             </div>
         </section>

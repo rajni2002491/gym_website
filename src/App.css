@@ -136,7 +136,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -146,10 +146,10 @@ body {
 }
 
 .hero-title {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 0.0rem;
 }
 
 .hero-content-section {
@@ -157,13 +157,13 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 800px;
-  gap: 2rem;
+  gap: 3rem;
   z-index: 2;
 }
 
 .hero-text {
   flex: 1;
+  text-align: left;
 }
 
 .hero-tagline {
@@ -171,14 +171,11 @@ body {
   color: white;
   line-height: 1.8;
   max-width: 500px;
-}
-
-.hero-button {
-  flex-shrink: 0;
+  margin-bottom: 2rem;
 }
 
 .hero-image-section {
-  width: 100%;
+  flex: 1;
   display: flex;
   justify-content: center;
   z-index: 2;
@@ -186,9 +183,9 @@ body {
 
 .gym-image {
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
   height: 400px;
-  background: linear-gradient(45deg, #ff4444, #ff8844);
+  background: linear-gradient(180deg, #ff8844 0%, #ff4444 100%);
   border-radius: 20px;
   position: relative;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -832,8 +829,15 @@ body {
 
   .hero-content-section {
     flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-text {
     text-align: center;
-    gap: 1rem;
+  }
+
+  .hero-tagline {
+    max-width: 100%;
   }
 
   .gym-image {
@@ -873,8 +877,15 @@ body {
 
   .hero-content-section {
     flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero-text {
     text-align: center;
-    gap: 1rem;
+  }
+
+  .hero-tagline {
+    max-width: 100%;
   }
 
   .gym-image {
