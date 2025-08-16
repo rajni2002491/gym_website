@@ -37,6 +37,12 @@ body {
   align-items: center;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .logo-icon {
   background: #00ff88;
   color: #000;
@@ -86,11 +92,13 @@ body {
 .btn-register {
   background: white;
   color: #8b5cf6;
+  border-radius: 25px;
 }
 
 .btn-login {
   background: #00ff88;
   color: white;
+  border-radius: 25px;
 }
 
 .btn-workshop {
@@ -259,7 +267,7 @@ body {
 
 /* Why Choose Section */
 .why-choose {
-  padding: 2rem 2rem;
+  padding: 0.5rem 2rem;
   background: #000;
   min-height: 100vh;
 }
@@ -331,7 +339,7 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-  padding: 4rem 2rem;
+  padding: 0.5rem 1rem;
   background: #000;
 }
 
