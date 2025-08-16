@@ -17,7 +17,13 @@ const Hero = () => {
                     </div>
 
                     <div className="hero-image-section">
-                        <div className="gym-image"></div>
+                        <div className="gym-image">
+                            <img
+                                src="/gym_image.png"
+                                alt="Muscular man lifting dumbbells"
+                                className="fitness-man-img"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
