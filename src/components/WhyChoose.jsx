@@ -6,7 +6,7 @@ const WhyChoose = () => {
         <section className="why-choose" id="about">
             <div className="why-choose-container">
                 <div className="why-choose-image">
-                    <div className="bodybuilder"></div>
+                    <img src="/gym_image2.png" alt="Fitness Training" className="why-choose-img" />
                 </div>
                 <div className="why-choose-content">
                     <h2 className="why-choose-title">WHY CHOOSE OUR FITNESS</h2>
