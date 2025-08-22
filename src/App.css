@@ -153,10 +153,10 @@ body {
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  padding: 120px 0 80px;
-  min-height: 100vh;
+  padding: 120px 0 0;
+  min-height: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   overflow: hidden;
 }
@@ -176,9 +176,10 @@ body {
 .hero-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem 0 2rem;
   position: relative;
   z-index: 1;
+  padding-bottom: 0;
 }
 
 .hero-title-section {
@@ -402,7 +403,7 @@ body {
 .fitness-man-img {
   width: 600px;
   height: 700px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   transition: all 0.3s ease;
 }
